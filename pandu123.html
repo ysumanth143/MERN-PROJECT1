@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Default style for larger screens */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-grid div {
+            flex: 1 1 20%; /* Adjusts the width of each item */
+            max-width: 200px; /* Ensures items don't stretch too much */
+            margin: 100px; /* Reduced margin for less space between items */
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        /* Style for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .image-grid div {
+                flex: 1 1 45%; /* Makes items take up more space on smaller screens */
+                margin: 100px; /* Reduced margin for less space between items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-grid">
+        <div>
+            <img src="decor.png" alt="Controllers">
+            <p>Controllers</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Keyboards">
+            <p>Keyboards</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Sweatshirts">
+            <p>Sweatshirts</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Pajamas">
+            <p>Pajamas</p>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="image-grid">
+        <div>
+            <img src="decor.png" alt="Kitchen & Dining">
+            <p>Kitchen & Dining</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Home Improvement">
+            <p>Home Improvement</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Decor">
+            <p>Decor</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Bedding & Bath">
+            <p>Bedding & Bath</p>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="image-grid">
+        <div>
+            <img src="decor.png" alt="Jackets">
+            <p>Jackets</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Sweatpants">
+            <p>Sweatpants</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Headsets">
+            <p>Headsets</p>
+        </div>
+        <div>
+            <img src="decor.png" alt="Computer Mice">
+            <p>Computer Mice</p>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>
